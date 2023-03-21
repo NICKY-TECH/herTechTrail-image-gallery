@@ -1,11 +1,14 @@
 const main=document.querySelector('.container');
 
-main.addEventListener('click',async(event)=>{
+main.addEventListener('click',async(event)=>
+{
 
-    
-        event.target.parentElement.style.backgroundColor=colorMaker();
+    if(event.target.tagName=='figcaption'.toUpperCase()){
+      
+      event.target.parentElement.style.backgroundColor=colorMaker();
 
-        event.target.innerText=changeText();
+      event.target.innerText=changeText();
+    }
    
 
          
